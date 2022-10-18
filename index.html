@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <h1>ORDENAR NUMEROS DE MAYOR A MENOR</h1>
+
+    <script>
+            var numeros = [2,5,45,80,97,120,145,200];
+            var auxiliar;
+                for ( var i=0; i < numeros.length-1; i++) {
+                    for (var b = i+1; b < numeros.length; b++){
+                        if (numeros[i] < numeros[b]){
+                                auxiliar = numeros[i];
+                                numeros[i] = numeros[b];
+                                numeros[b] = auxiliar; 
+                        }
+                    }
+               }            
+                    document.write(numeros);
+                   
+    </script>
+    
+</body>
+</html>
